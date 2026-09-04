@@ -1,0 +1,76 @@
+version 3
+run Minimal-0-20260828-12:07:17-33647
+attr configname Minimal
+attr datetime 20260828-12:07:17
+attr datetimef 20260828-120717
+attr experiment Minimal
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network LoRaMesh
+attr processid 33647
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 1
+config extends Mesh
+config *.simulation.numNodes 3
+config *.simulation.activationMin 0s
+config *.simulation.activationMax 2s
+config *.simulation.simulationTime 30s
+config sim-time-limit 30s
+config *.simulation.outputDir "\"runs/minimal\""
+config description "Mesh LoRa AU915 com encaminhamento multi-hop"
+config *.simulation.numNodes 10
+config *.simulation.areaSize 1000m
+config *.simulation.activationMin 0s
+config *.simulation.activationMax 3600s
+config *.simulation.simulationTime 14400s
+config *.simulation.seed 1
+config *.simulation.initialMessageInterval 300s
+config *.simulation.maxHops 8
+config *.simulation.maxRetries 2
+config *.simulation.payloadBytes 24
+config *.simulation.radioRange 450m
+config *.simulation.spreadingFactorMin 7
+config *.simulation.spreadingFactorMax 12
+config *.simulation.bandwidth 125000
+config *.simulation.txPower 14
+config *.simulation.au915UplinkBase 915200000
+config *.simulation.au915UplinkChannels 64
+config *.simulation.outputDir "\"runs/default\""
+config network LoRaMesh
+config sim-time-limit 14400s
+config seed-set 1
+config cmdenv-express-mode false
+
+par LoRaMesh.simulation typename "\"MeshSimulation\""
+par LoRaMesh.simulation numNodes 3
+par LoRaMesh.simulation areaSize 1000m
+attr unit m
+par LoRaMesh.simulation activationMin 0s
+attr unit s
+par LoRaMesh.simulation activationMax 2s
+attr unit s
+par LoRaMesh.simulation simulationTime 30s
+attr unit s
+par LoRaMesh.simulation seed 1
+par LoRaMesh.simulation initialMessageInterval 300s
+attr unit s
+par LoRaMesh.simulation maxHops 8
+par LoRaMesh.simulation maxRetries 2
+par LoRaMesh.simulation payloadBytes 24
+par LoRaMesh.simulation radioRange 450m
+attr unit m
+par LoRaMesh.simulation spreadingFactorMin 7
+par LoRaMesh.simulation spreadingFactorMax 12
+par LoRaMesh.simulation bandwidth 125000
+par LoRaMesh.simulation txPower 14
+par LoRaMesh.simulation au915UplinkBase 915200000
+par LoRaMesh.simulation au915UplinkChannels 64
+par LoRaMesh.simulation outputDir "\"runs/minimal\""
+par LoRaMesh typename "\"LoRaMesh\""
+

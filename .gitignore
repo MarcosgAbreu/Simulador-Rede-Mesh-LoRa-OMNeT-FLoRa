@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+third_party/
+build/
+downloads/
+runs/
+*.tgz
+*.tar.gz
+*.mpg
+*.png
+scripts/env.sh
